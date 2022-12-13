@@ -1,10 +1,14 @@
-// Bienvenida
 
-alert('Bienvenido a nuestra rotisería online');
-alert('La promo del dia es: Llevando dos o más productos tenes 10% de descuento en el total de tu compra');
+// función de bienvenida
+const bienvenida = () => {
+    alert('Bienvenido a nuestra rotisería online');
+    alert('La promo del dia es: Llevando dos o más productos tenes 10% de descuento en el total de tu compra');
+    ordenarPrecios();
+}
+
+
 
 // ordenar precios de los productos de menor a mayor
-
 const ordenarPrecios = () => {
     comida.sort((a, b) => a.precio - b.precio)
     mostrarLista();
@@ -14,11 +18,10 @@ const mostrarLista = () => {
     const lista = comida.map(producto => {
         return producto.nombre+ ' $'+producto.precio
     });
-    console.log(lista)
     comprarComida(lista)
 }
 
-// función elegir compra
+// función para elegir la compra
 const carrito = [];
 const comprarComida = (listaDeComida) => {
     let comidaNombre = '';
@@ -56,7 +59,6 @@ const agregarProducto = (validarProducto, idProducto, cantidadComida ) => {
         validarProducto.cantidad += cantidadComida;
         carrito.push(validarProducto);
     }
-    console.log(carrito)
 };
 
 
@@ -79,27 +81,32 @@ const confirmarCompra = () => {
 };
 
 
-const finalizarCompra = (productoFinal) => {
+
+
+const finalizarCompra = () => {
     const totalCompra = carrito.reduce((acc, elemento) => acc + elemento.cantidad, 0);
-    const precioTotal = carrito.reduce((acc, elemento) => acc + (elemento.precio*elemento.cantidad), 0)
+    let precioTotal = carrito.reduce((acc, elemento) => acc + (elemento.precio*elemento.cantidad), 0)
 
 if (totalCompra >= 2) {
     promo(precioTotal)
 } else {
     alert('El precio de su compra es de: $'+precioTotal)
+
 }
 
 };
 
-
-// promoción
+// promoción de dos o mas productos
 const promo = (precioTotal) => {
     const precioPromo = precioTotal * 0.90;
 
-    alert('El precio final de su compra con promoción es de: $'+precioPromo)
+    alert('El precio final de su compra con promoción es de: $'+precioPromo);
 }
 
 
+ 
+bienvenida();
 
-ordenarPrecios()
+
+
  
