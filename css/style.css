@@ -1,0 +1,83 @@
+/* Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* solo desktop */
+
+
+/* estilos header */
+header .container-fluid {
+    background-color: #052 ;
+    height: 5rem;
+}
+header .navbar .container-fluid .navbar-brand img {
+    height: 5rem;
+    width: 5rem;
+}
+
+
+
+
+/* Estilos main */
+
+main .promo {
+
+}
+main .promo h1 {
+    font-size: 30px ;
+    text-align: center;
+    margin: 1rem;
+}
+
+main .promo h2 {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container .container__productos {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(236, 168, 65, 0.863);
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    height: 26rem;
+    width: 20rem;
+}
+
+.container .container__productos img {
+    border-radius: 2rem;
+    padding: 1rem;
+    height: 50%;
+}
+
+.container .container__productos .container__productos--texto {
+    text-align: center;
+    font-size: 15px ;
+}
+
+.container .container__productos .container__productos--texto .container__productos--precio {
+    font-weight: bold;
+    font-size: 20px;
+}
+.container .container__productos .container__productos--texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .container__productos .container__productos--boton {
+    align-self: center;
+    border-radius: 1rem;
+    width: 10rem ;
+
+}
