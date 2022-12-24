@@ -1,4 +1,4 @@
-const comida =
+/* const comida =
 [
     {
         id: 1,
@@ -28,3 +28,4 @@ const comida =
     }
 
 ]
+ */

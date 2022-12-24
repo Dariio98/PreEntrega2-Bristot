@@ -1,5 +1,5 @@
 
-// función de bienvenida
+/* // función de bienvenida
 const bienvenida = () => {
     alert('Bienvenido a nuestra rotisería online');
     alert('La promo del dia es: Llevando dos o más productos tenes 10% de descuento en el total de tu compra');
@@ -59,6 +59,7 @@ const agregarProducto = (validarProducto, idProducto, cantidadComida ) => {
         validarProducto.cantidad += cantidadComida;
         carrito.push(validarProducto);
     }
+
 };
 
 
@@ -103,10 +104,4 @@ const promo = (precioTotal) => {
     alert('El precio final de su compra con promoción es de: $'+precioPromo);
 }
 
-
- 
-bienvenida();
-
-
-
- 
+bienvenida(); */
