@@ -15,6 +15,7 @@ if (productosCarrito) {
     carritoFuncionEliminar.classList.remove("disabled");
     carritoFuncionComprar.classList.remove("disabled");
     carritoFuncionPrecio.classList.remove("disabled");
+    
 
     // renderizar carrito
     const contenedor = document.getElementById('carrito-productos')
@@ -23,7 +24,7 @@ if (productosCarrito) {
         div.classList.add('carrito__producto--contenedor');
         div.innerHTML += `
         <div class="carrito__producto--comprar">
-        <img src="${producto.img}" alt="">
+        <img src="../${producto.img}" alt="${producto.nombre}">
         <div class="carrito__producto--nombre">
             <h2>${producto.nombre}</h2>
         </div>
