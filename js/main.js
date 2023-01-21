@@ -1,12 +1,13 @@
 // Renderización del index
 const mostrarProductos = () => {
+
     const contenedor = document.getElementById('container');
 
     productos.forEach(producto => {
         const div = document.createElement('div')
         div.classList.add('container__productos');
         div.innerHTML += `<div class="container__productos--menu">
-        <img src="${producto.img}" alt="imagen de pizza">
+        <img src="${producto.img}" alt="${producto.nombre}">
         <div class="container__productos--texto">
         <h3>${producto.nombre}</h3>
         <p class="container__productos--precio">$${producto.precio}</p>
