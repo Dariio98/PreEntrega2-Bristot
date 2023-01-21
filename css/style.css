@@ -156,11 +156,21 @@ footer h2, h3 {
 }
 .carrito .carrito__funcion .carrito__funcion--comprar .carrito__funcion--precio {
     border: 1px solid;
+    height: 60px;
+    font-size: 12px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-bottom-left-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    
 }
 .carrito .carrito__funcion .carrito__funcion--comprar .carrito__funcion--compra {
     padding: 1rem;
     border-bottom-right-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
+}
+.carrito .carrito__funcion .carrito__funcion--comprar .carrito__funcion--compra:hover {
+    scale: 1.1;
 }
 
 .disabled {
